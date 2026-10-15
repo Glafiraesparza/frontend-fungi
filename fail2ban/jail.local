@@ -1,0 +1,14 @@
+[DEFAULT]
+bantime = 60
+findtime = 60
+maxretry = 5
+backend = polling
+
+[sshd]
+enabled = false
+
+[http-flood]
+enabled = true
+filter = http-flood
+logpath = /var/log/nginx/access.log
+action = iptables-multiport[name=http-flood, port="5173", protocol=tcp]
