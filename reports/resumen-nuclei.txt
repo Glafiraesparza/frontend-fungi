@@ -1,0 +1,23 @@
+ANÁLISIS DE SEGURIDAD CON NUCLEI
+Proyecto: Fungi Atlas
+Servicio: Frontend
+Herramienta: Nuclei v3.11.1
+Objetivo: http://fungi-frontend:5173/
+
+RESULTADOS
+Plantillas cargadas: 11181
+Severidades: todas las disponibles
+Duración: 2 minutos
+Hallazgos detectados: 13
+Severidad de los hallazgos: informativa (info)
+
+OBSERVACIONES
+Se identificaron encabezados HTTP de seguridad faltantes.
+También se detectó Nginx 1.22.1 y su condición EOL.
+Se registraron intentos de conexión a los puertos 5814 y 4040,
+que estaban cerrados.
+
+CONCLUSIÓN
+Se identificaron 13 hallazgos informativos que deben revisarse
+para determinar las mejoras de seguridad necesarias.
+No se reportaron hallazgos de severidad baja, media, alta o crítica.
